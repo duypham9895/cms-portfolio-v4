@@ -3,12 +3,13 @@ export default ({ env }) => ({
     config: {
       endpoint: "/graphql",
       shadowCRUD: true,
-      playgroundAlways: true,
-      depthLimit: 7,
-      amountLimit: 100,
+      playgroundAlways: env.bool("ENABLE_GRAPHQL_PLAYGROUND", false),
       apolloServer: {
         tracing: false,
+        introspection: env.bool("ENABLE_GRAPHQL_PLAYGROUND", false),
       },
+      depthLimit: 7,
+      amountLimit: 100,
     },
   },
   upload: {
