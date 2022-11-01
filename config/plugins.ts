@@ -1,4 +1,16 @@
 export default ({ env }) => ({
+  graphql: {
+    config: {
+      endpoint: "/graphql",
+      shadowCRUD: true,
+      playgroundAlways: false,
+      depthLimit: 7,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
+      },
+    },
+  },
   upload: {
     config: {
       provider: "cloudinary",
@@ -6,12 +18,9 @@ export default ({ env }) => ({
         cloud_name: env("CLOUDINARY_NAME"),
         api_key: env("CLOUDINARY_KEY"),
         api_secret: env("CLOUDINARY_SECRET"),
-      },
-      actionOptions: {
-        upload: {
+        upload_config: {
           folder: env("CLOUDINARY_FOLDER"),
         },
-        delete: {},
       },
     },
   },
