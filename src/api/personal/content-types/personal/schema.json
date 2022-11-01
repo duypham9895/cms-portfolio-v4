@@ -37,31 +37,6 @@
     },
     "resume_url": {
       "type": "string"
-    },
-    "contact": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::contact.contact"
-    },
-    "skills": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::skill.skill"
-    },
-    "experiences": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::experience.experience"
-    },
-    "educations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::education.education"
-    },
-    "courses": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::course.course"
     }
   }
 }
