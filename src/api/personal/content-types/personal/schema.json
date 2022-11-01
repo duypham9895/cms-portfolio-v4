@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "personals",
+  "info": {
+    "singularName": "personal",
+    "pluralName": "personals",
+    "displayName": "Personal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "full_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "resume_url": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::contact.contact"
+    },
+    "skills": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    },
+    "experiences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::experience.experience"
+    },
+    "educations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::education.education"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::course.course"
+    }
+  }
+}
