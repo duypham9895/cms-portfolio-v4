@@ -24,9 +24,13 @@ export default [
     },
   },
   {
-    settings: {
-      cors: {
-        origin: ["*"], //allow all
+    name: "strapi::cors",
+    config: {
+      settings: {
+        cors: {
+          origin: ["*"], //allow all origins
+          headers: ["*"], //allow all headers
+        },
       },
     },
   },
