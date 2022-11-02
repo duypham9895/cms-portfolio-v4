@@ -23,4 +23,16 @@ export default [
       },
     },
   },
+  {
+    name: "strapi::cors",
+    config: {
+      enabled: true,
+      header: "*",
+      origin: [
+        "http://localhost:3000",
+        "https://www.edwardpham.me",
+        "https://portfolio-v4-blue.vercel.app/",
+      ],
+    },
+  },
 ];
