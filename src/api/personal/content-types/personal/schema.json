@@ -35,8 +35,10 @@
     "description": {
       "type": "richtext"
     },
-    "resume_url": {
-      "type": "string"
+    "socials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social.social"
     }
   }
 }
