@@ -4,7 +4,8 @@
   "info": {
     "singularName": "education",
     "pluralName": "educations",
-    "displayName": "Education"
+    "displayName": "Education",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,16 +13,19 @@
   "pluginOptions": {},
   "attributes": {
     "school": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "degree": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "richtext"
     },
     "start_date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "end_date": {
       "type": "date"
