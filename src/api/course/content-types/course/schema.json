@@ -4,7 +4,8 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "Course"
+    "displayName": "Course",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,19 +13,23 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "organization": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "credential_id": {
       "type": "string"
     },
     "credential_url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "start_date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "end_date": {
       "type": "date"
