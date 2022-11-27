@@ -1,4 +1,4 @@
-# fly.toml file generated for cms-portfolio-v4 on 2022-11-27T11:59:55+07:00
+# fly.toml file generated for cms-portfolio-v4 on 2022-11-27T15:11:54+07:00
 
 app = "cms-portfolio-v4"
 kill_signal = "SIGINT"
