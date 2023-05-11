@@ -9,7 +9,7 @@ WORKDIR /opt/
 COPY ./package.json ./yarn.lock ./
 ENV PATH /opt/node_modules/.bin:$PATH
 # Install dependencies
-RUN npm install -g yarn@3
+RUN yarn set version 3.5.1
 RUN yarn install
 # Copy the application files
 WORKDIR /opt/app
